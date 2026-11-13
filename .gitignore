@@ -17,5 +17,5 @@
 *.fls
 *.run.xml
 *.gz
-
+.DS_Store
 combined.tex
