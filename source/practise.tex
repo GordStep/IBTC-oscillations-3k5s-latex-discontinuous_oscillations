@@ -1,1 +1,157 @@
 \section{Практическая часть}
+
+Лабораторная установка состоит из блока для изучения разрывных колебаний, генератора импульсов и двухканального осциллографа. Блок включает схему мультивибратора (триггера) и схему кипп-реле; регулятором входного напряжения $E$ задаётся режим мультивибратора или триггера.
+
+\subsection{Мультивибратор}
+
+Регулятором входного напряжения перевели блок в режим мультивибратора. На экране осциллографа наблюдали автоколебания --- осциллограммы напряжения и тока и фазовую плоскость. Измерили период и амплитуду автоколебаний.
+
+Настройки осциллографа: развёртка по горизонтали $50$ мкс/дел, по вертикали $5$ мВ/дел. Период автоколебаний составил $17$ дел (для напряжения и тока); амплитуда напряжения $A_\text{max} = 10$ дел, $A_\text{min} = 6{,}5$ дел, амплитуда тока $A = 9$ дел.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{task_1}
+	\caption{Осциллограмма мультивибратора}
+	\label{fig:pr:1}
+\end{figure}
+
+\subsection{Триггер}
+
+Регулятором входного напряжения перевели блок в режим триггера и подключили к входу генератор прямоугольных импульсов. Подали сигнал с частотой $1$ кГц, амплитудой $900$ мВ и заполнением $2\,\%$. Изменяя заполнение и амплитуду запускающего импульса, наблюдали переключение триггера и определили допустимые диапазоны этих параметров. При частоте $f = 11{,}8$ кГц, амплитуде $900$ мВ и заполнении $10{,}998\,\%$ наблюдали режим деления частоты --- переключение триггера на каждый второй входной импульс.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_2_0p7_900mV}
+		\subcaption{Заполнение $0{,}7\,\%$, амплитуда $900$ мВ}
+		\label{fig:pr:2a}
+	\end{minipage}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_2_3p7_900mV}
+		\subcaption{Заполнение $3{,}7\,\%$, амплитуда $900$ мВ}
+		\label{fig:pr:2b}
+	\end{minipage}
+	\caption{Влияние заполнения запускающего импульса на переключение триггера}
+	\label{fig:pr:2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_2_2pct_0p5V}
+		\subcaption{Заполнение $2\,\%$, амплитуда $0{,}5$ В}
+		\label{fig:pr:3a}
+	\end{minipage}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_2_2pct_1p5V}
+		\subcaption{Заполнение $2\,\%$, амплитуда $1{,}5$ В}
+		\label{fig:pr:3b}
+	\end{minipage}
+	\caption{Влияние амплитуды запускающего импульса на переключение триггера}
+	\label{fig:pr:3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_2_2pct_900mV}
+		\subcaption{Заполнение $2\,\%$, амплитуда $900$ мВ}
+		\label{fig:pr:4a}
+	\end{minipage}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_2_division}
+		\subcaption{Режим деления частоты: $f = 11{,}8$ кГц, $A = 900$ мВ, заполнение $10{,}998\,\%$}
+		\label{fig:pr:4b}
+	\end{minipage}
+	\caption{Исходный режим триггера и режим деления частоты}
+	\label{fig:pr:4}
+\end{figure}
+
+\subsection{Кипп-реле}
+
+К входу кипп-реле подключили генератор, к выходу --- осциллограф. Подали исходный сигнал с частотой $24$ кГц, амплитудой $0{,}4$ В и заполнением $2\,\%$. Измеряли длительность выходного сигнала; изменяя заполнение и амплитуду запускающего импульса, определили минимальные и максимальные значения, при которых выходной сигнал сохраняет свою длительность.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_3_0p19pct}
+		\subcaption{Заполнение $0{,}19\,\%$}
+		\label{fig:pr:5a}
+	\end{minipage}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_3_2pct}
+		\subcaption{Заполнение $2\,\%$}
+		\label{fig:pr:5b}
+	\end{minipage}
+	\caption{Влияние заполнения запускающего импульса на работу кипп-реле}
+	\label{fig:pr:5}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_3_5p2pct}
+		\subcaption{Заполнение $5{,}2\,\%$}
+		\label{fig:pr:6a}
+	\end{minipage}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_3_6p4pct}
+		\subcaption{Заполнение $6{,}4\,\%$}
+		\label{fig:pr:6b}
+	\end{minipage}
+	\caption{Влияние заполнения запускающего импульса на работу кипп-реле}
+	\label{fig:pr:6}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{task_3_6p7pct}
+	\caption{Заполнение $6{,}7\,\%$}
+	\label{fig:pr:7}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_3_0p2V}
+		\subcaption{Амплитуда $0{,}2$ В}
+		\label{fig:pr:8a}
+	\end{minipage}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_3_0p21V}
+		\subcaption{Амплитуда $0{,}21$ В}
+		\label{fig:pr:8b}
+	\end{minipage}
+	\caption{Влияние амплитуды запускающего импульса на работу кипп-реле}
+	\label{fig:pr:8}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_3_0p95V}
+		\subcaption{Амплитуда $0{,}95$ В}
+		\label{fig:pr:9a}
+	\end{minipage}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{task_3_0p99V}
+		\subcaption{Амплитуда $0{,}99$ В}
+		\label{fig:pr:9b}
+	\end{minipage}
+	\caption{Влияние амплитуды запускающего импульса на работу кипп-реле}
+	\label{fig:pr:9}
+\end{figure}
